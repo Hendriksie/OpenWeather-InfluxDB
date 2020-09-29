@@ -1,0 +1,21 @@
+{
+  "name": "openweather-influxdb",
+  "version": "0.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hendriksie/OpenWeather-InfluxDB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hendriksie/OpenWeather-InfluxDB/issues"
+  },
+  "homepage": "https://github.com/Hendriksie/OpenWeather-InfluxDB#readme",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "influx": "^5.6.3"
+  }
+}
