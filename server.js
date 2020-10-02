@@ -1,9 +1,6 @@
-const cron = require('cron');
-const InfluxDB = require('influx').InfluxDB;
+const { CronJob } = require('cron');
+const { run } = require('./src');
 
-const config = {
-    influx: require('./config/influx'),
-    openWeather: require('./config/open-weather'),
-};
+const job = new CronJob('0 */10 * * * *', run, null, true);
 
-console.log(config);
+job.start();
